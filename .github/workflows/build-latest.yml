@@ -43,4 +43,4 @@ jobs:
       - name: Push images
         run: |
          echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
-         docker push ghcr.io/jketelaar/awx-ee:latest
+         docker push ghcr.io/intercube/awx-ee:latest
