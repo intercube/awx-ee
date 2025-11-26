@@ -31,7 +31,7 @@ jobs:
         env:
           DOCKER_BUILDKIT: 1
         run: |
-          tox -e docker -- --tag=ghcr.io/jketelaar/awx-ee:latest
+          tox -e docker -- --tag=ghcr.io/intercube/awx-ee:latest
 
       - name: Extract metadata (tags, labels) for Docker
         id: meta
