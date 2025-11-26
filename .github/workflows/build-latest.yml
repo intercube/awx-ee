@@ -2,12 +2,11 @@ name: Build and Push latest image
 
 on:
   push:
-    # build and push anytime commits are merged to devel
     branches:
       - devel
   schedule:
-    # build every 12 hours
     - cron: '0 */12 * * *'
+  workflow_dispatch: {}
 
 jobs:
   build_and_push_latest:
